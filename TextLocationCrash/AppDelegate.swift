@@ -6,12 +6,16 @@
 //
 
 import Cocoa
+import Logging
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
+    var logger = {
+        var logger = Logger(label: "in.roguemonkey.TextLocationCrash.AppDelegate")
+        logger.logLevel = .error
 
-    
-
+        return logger
+    }()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application

@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2558673A2B3007CA00F40BBC /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255867392B3007CA00F40BBC /* Text.swift */; };
+		2558673D2B30084E00F40BBC /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 2558673C2B30084E00F40BBC /* Tagged */; };
+		25B8DAAE2B41784400EA2DC7 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B8DAAD2B41784400EA2DC7 /* TextView.swift */; };
+		25B8DAB02B417A0600EA2DC7 /* TextFragmentLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B8DAAF2B417A0600EA2DC7 /* TextFragmentLayer.swift */; };
+		25B8DAD82B49864000EA2DC7 /* RenderingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B8DAD72B49864000EA2DC7 /* RenderingAttributes.swift */; };
 		25BAF1F02AD04D19006631B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BAF1EF2AD04D19006631B2 /* AppDelegate.swift */; };
-		25BAF1F22AD04D19006631B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BAF1F12AD04D19006631B2 /* ViewController.swift */; };
+		25BAF1F22AD04D19006631B2 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BAF1F12AD04D19006631B2 /* TextViewController.swift */; };
 		25BAF1F42AD04D1A006631B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BAF1F32AD04D1A006631B2 /* Assets.xcassets */; };
 		25BAF1F72AD04D1A006631B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BAF1F52AD04D1A006631B2 /* Main.storyboard */; };
-		25BAF1FF2AD04D3C006631B2 /* CustomTextLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BAF1FE2AD04D3C006631B2 /* CustomTextLocation.swift */; };
 		25BAF2012AD050FD006631B2 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BAF2002AD050FD006631B2 /* DocumentModel.swift */; };
+		25FDE2772B3EEE8C00E50492 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 25FDE2762B3EEE8C00E50492 /* Logging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		255867392B3007CA00F40BBC /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		25B8DAAD2B41784400EA2DC7 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		25B8DAAF2B417A0600EA2DC7 /* TextFragmentLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFragmentLayer.swift; sourceTree = "<group>"; };
+		25B8DAD72B49864000EA2DC7 /* RenderingAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderingAttributes.swift; sourceTree = "<group>"; };
 		25BAF1EC2AD04D19006631B2 /* TextLocationCrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextLocationCrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BAF1EF2AD04D19006631B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25BAF1F12AD04D19006631B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25BAF1F12AD04D19006631B2 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		25BAF1F32AD04D1A006631B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25BAF1F62AD04D1A006631B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25BAF1F82AD04D1A006631B2 /* TextLocationCrash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextLocationCrash.entitlements; sourceTree = "<group>"; };
-		25BAF1FE2AD04D3C006631B2 /* CustomTextLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextLocation.swift; sourceTree = "<group>"; };
 		25BAF2002AD050FD006631B2 /* DocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FDE2772B3EEE8C00E50492 /* Logging in Frameworks */,
+				2558673D2B30084E00F40BBC /* Tagged in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +66,12 @@
 		25BAF1EE2AD04D19006631B2 /* TextLocationCrash */ = {
 			isa = PBXGroup;
 			children = (
+				25B8DAD72B49864000EA2DC7 /* RenderingAttributes.swift */,
 				25BAF1EF2AD04D19006631B2 /* AppDelegate.swift */,
-				25BAF1F12AD04D19006631B2 /* ViewController.swift */,
-				25BAF1FE2AD04D3C006631B2 /* CustomTextLocation.swift */,
+				255867392B3007CA00F40BBC /* Text.swift */,
+				25BAF1F12AD04D19006631B2 /* TextViewController.swift */,
+				25B8DAAD2B41784400EA2DC7 /* TextView.swift */,
+				25B8DAAF2B417A0600EA2DC7 /* TextFragmentLayer.swift */,
 				25BAF2002AD050FD006631B2 /* DocumentModel.swift */,
 				25BAF1F32AD04D1A006631B2 /* Assets.xcassets */,
 				25BAF1F52AD04D1A006631B2 /* Main.storyboard */,
@@ -83,6 +96,10 @@
 			dependencies = (
 			);
 			name = TextLocationCrash;
+			packageProductDependencies = (
+				2558673C2B30084E00F40BBC /* Tagged */,
+				25FDE2762B3EEE8C00E50492 /* Logging */,
+			);
 			productName = TextLocationCrash;
 			productReference = 25BAF1EC2AD04D19006631B2 /* TextLocationCrash.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,10 @@
 				Base,
 			);
 			mainGroup = 25BAF1E32AD04D19006631B2;
+			packageReferences = (
+				2558673B2B30084E00F40BBC /* XCRemoteSwiftPackageReference "swift-tagged" */,
+				25FDE2752B3EEE8C00E50492 /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
 			productRefGroup = 25BAF1ED2AD04D19006631B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,10 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25BAF1F22AD04D19006631B2 /* ViewController.swift in Sources */,
+				25BAF1F22AD04D19006631B2 /* TextViewController.swift in Sources */,
+				25B8DAD82B49864000EA2DC7 /* RenderingAttributes.swift in Sources */,
+				25B8DAAE2B41784400EA2DC7 /* TextView.swift in Sources */,
+				2558673A2B3007CA00F40BBC /* Text.swift in Sources */,
 				25BAF1F02AD04D19006631B2 /* AppDelegate.swift in Sources */,
 				25BAF2012AD050FD006631B2 /* DocumentModel.swift in Sources */,
-				25BAF1FF2AD04D3C006631B2 /* CustomTextLocation.swift in Sources */,
+				25B8DAB02B417A0600EA2DC7 /* TextFragmentLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +242,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -273,6 +298,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -352,6 +378,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2558673B2B30084E00F40BBC /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+		25FDE2752B3EEE8C00E50492 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2558673C2B30084E00F40BBC /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2558673B2B30084E00F40BBC /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
+		};
+		25FDE2762B3EEE8C00E50492 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FDE2752B3EEE8C00E50492 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25BAF1E42AD04D19006631B2 /* Project object */;
 }
